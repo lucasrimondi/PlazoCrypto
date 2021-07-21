@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/0f48d8c00d.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>PlazoCrypto</title>
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo-nav sticky-top" id="menu-navegacion">
+        <div class="container my-1">
+            <a class="navbar-bran">
+                <h1 class="logo"><span class="color-text">Plazo</span>Crypto</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicio" class="nav-link">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#formulario" class="nav-link">Inscríbete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">Contacto</a>
+                    </li>
+              </ul>
+          </div>
+        </div>  
+      </nav>
+<!--Header-->
+      <div style="background: url('assets/1.jpg'); overflow-x: hidden" class="bg-cover text-white" id="header">
+        <div id="headerdiv" class="container py-5 text-center" style="overflow-x: hidden">
+          <div class="row align-items-center">
+            <div class="col-12 text-center text-white">
+            <h1 class="customh1 mt-4 mb-4">PlazoCrypto: el primer servicio de Staking de la Argentina</h1>
+            <p class="font-italic mb-5 customp1">La manera más segura, simple y con las mejores tasas del mercado.</p>
+            <a href="#servicio" class="btn btn-outline-warning btn-lg mb-5" style="font-family:Arial, Helvetica, sans-serif; color: white" role="button" id="conocemas">Conocé más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Intro-->
+      <section id="intro">
+          <div class="container">
+              <div class="row align-items-sm-center">
+                  <div class="col-sm-12 col-md-6">
+                        <h2 class="mt-5 text-center">¿Quiénes somos?</h2>
+                        <p class="mt-3 text-justify">Simple, somos PlazoCrypto. Somos la primera empresa Argentina que ofrece Staking de <b>Bitcoin</b>, <b>Ethereum</b> y <b>Cardano</b>. Nuestro servicio funciona como un plazo fijo: depositás tus crypto por un plazo determinado, a una tasa fija mensual y al final del plazo podés retirar tu capital con los intereses generados.</p>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                      <img class="img-thumbnail img-fluid mt-5" src="assets/2.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+      </section>
+<!--Servicio-->
+      <section id="servicio">
+          <div class="container">
+              <div class="row mt-5">
+                  <div class="col-sm-12 col-md-12 text-center text-white">
+                      <h1 class="mt-5">¿Cómo funciona el servicio?</h1>
+                      <p class="mt-4 pb-5 text-justify">&#9312 Primero, utilizá la Calculadora de Rendimientos del activo que quieras depositar. Colocás el capital y el plazo y el sistema te devolverá instantáneamente cuál será tu ganancia futura. &#9313 Si estás felíz con tu rendimiento, completá el formulario que figura más abajo y nos contactaremos con vos, en el transcurso del día, para cerrar la operación.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+<!--Calc. Rendimientos-->
+        <section id="staking">
+          <div class="container"style="overflow-x: hidden">
+              <h1 class="text-center mt-5">&#9312 Calculadora de Rendimientos</h1>
+                  <div class="row">
+                    <div class="col-md-8 col-lg-6 mx-auto mb-5 text-center">
+                      <h2 class="mt-5"><img src="https://img.icons8.com/color/96/000000/bitcoin--v1.png"/></h2>
+                      <div id= "cardBTC" class="card card-body text-center mt-3">
+                        <h1 id= "hBTC" class="heading display-5 pb-3">Bitcoin</h1>
+                          <form id="calculadorabtc">
+                            <div class="form-group">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Capital</span>
+                                </div>
+                                <input type="number" step="any" id="cantidadbtc" placeholder="" class="form-control" name="" value="">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Tasa Mensual</span>
+                                </div>
+                                <input type="number" step="any" id="tasainteresbtc" placeholder="2%" class="form-control" name="" value="" disabled>
+                              </div>
+                            </div>
+                             <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Plazo</span>
+                                    </div>
+                                    <input type="number" id="plazobtc" placeholder="(En meses)" class="form-control" name="" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <input type="submit" name="" value="Calcular" class="btn btn-dark btn-block">
+                            </div>
+                          </form>
+                          <!-- Loader  -->
+                          <div id="loadingBTC">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading Gif" style="height: 100px;" class="img-fluid">
+                          </div>
+                          <!-- Result  -->
+                          <div id="resultadoBTC" class="pt-4">
+                            <h5>Resultado:</h5>
+                            <div class="form-group">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">BTC</span>
+                                </div>
+                                <input type="number" step="any" id="retornobtc" class="form-control" name="" value="" disabled>
+                              </div>
+                            </div>
+                            <a href="#formulario" class="btn btn-outline-dark btn-md text-center center mb-1" id="botoninscribite">Operá con nosotros</a>
+                          </div>
+                        </div>
+                      <button id="btnBTC" class="btn btn-outline-info mt-3" data-mdb-ripple-color="dark" data-aos="zoom-in" data-aos-duration="1000">Cotización de BTC en tiempo real</button>
+                    </div>
+                  </div>
+                  
+                    <div class="row">
+                      <div class="col-md-8 col-lg-6 mx-auto mt-3 mb-5 text-center">
+                        <h2 class="mt-5"><img src="https://img.icons8.com/fluent/96/000000/ethereum.png"/></h2>
+                        <div id= "cardETH" class="card card-body text-center mt-3">
+                          <h1 id="hETH" class="heading display-5 pb-3">Ethereum</h1>
+                            <form id="calculadoraeth">
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">Capital</span>
+                                  </div>
+                                  <input type="number" step="any" id="cantidadeth" placeholder="" class="form-control" name="" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">Tasa Mensual</span>
+                                  </div>
+                                  <input type="number" id="tasaintereseth" placeholder="3%" class="form-control" name="" value="" disabled>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">Plazo</span>
+                                      </div>
+                                      <input type="number" id="plazoeth" placeholder="(En meses)" class="form-control" name="" value="">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="submit" name="" value="Calcular" class="btn btn-dark btn-block">
+                              </div>
+                            </form>
+                            <!-- Loader  -->
+                            <div id="loadingETH">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading Gif" style="height: 100px;" class="img-fluid">
+                            </div>
+                            <!-- Result  -->
+                            <div id="resultadoETH" class="pt-4">
+                              <h5>Resultado:</h5>
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">ETH</span>
+                                  </div>
+                                  <input type="number" step="any" id="retornoeth" class="form-control" name="" value="" disabled>
+                                </div>
+                              </div>
+                              <a href="#formulario" class="btn btn-outline-dark btn-md text-center center mb-1" id="botoninscribite">Operá con nosotros</a>
+                            </div>
+                          </div>
+                        <button id="btnETH" class="btn btn-outline-info mt-3" data-mdb-ripple-color="dark" data-aos="zoom-in" data-aos-duration="1000">Cotización de ETH en tiempo real</button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-8 col-lg-6 mx-auto mt-3 mb-5 text-center">
+                        <h2 class="mt-5"><img src="https://img.icons8.com/fluent/96/000000/cardano.png"/></h2>
+                        <div id= "cardADA" class="card card-body text-center mt-3">
+                          <h1 id= "hADA" class="heading display-5 pb-3">Cardano</h1>
+                            <form id="calculadoraada">
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">Capital</span>
+                                  </div>
+                                  <input type="number" step="any" id="cantidadada" placeholder="" class="form-control" name="" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">Tasa Mensual</span>
+                                  </div>
+                                  <input type="number" id="tasainteresada" placeholder="4%" class="form-control" name="" value="" disabled>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">Plazo</span>
+                                      </div>
+                                      <input type="number" id="plazoada" placeholder="(En meses)" class="form-control" name="" value="">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="submit" name="" value="Calcular" class="btn btn-dark btn-block">
+                              </div>
+                            </form>
+                            <!-- Loader  -->
+                            <div id="loadingADA">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading Gif" style="height: 100px;" class="img-fluid">
+                            </div>
+                            <!-- Result  -->
+                            <div id="resultadoADA" class="pt-4">
+                              <h5>Resultado:</h5>
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">ADA</span>
+                                  </div>
+                                  <input type="number" step="any" id="retornoada" class="form-control" name="" value="" disabled>
+                                </div>
+                              </div>
+                              <a href="#formulario" class="btn btn-outline-dark btn-md text-center center mb-1" id="botoninscribite">Operá con nosotros</a>
+                            </div>
+                          </div>
+                          <button id="btnADA" class="btn btn-outline-info mt-3" data-mdb-ripple-color="dark" data-aos="zoom-in" data-aos-duration="1000">Cotización de ADA en tiempo real</button>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+<!--Galería-->
+      <section id="galeria">
+          <div class="row mt-5 no-gutters"style="overflow-x: hidden">
+              <div class="col-3 col-md-3">
+                  <img src="assets/g1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-3 col-md-3">
+                <img src="assets/g2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-3 col-md-3">
+                <img src="assets/g3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-3 col-md-3">
+                <img src="assets/g4.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+      </section>
+<!-- Formulario de inscripción -->
+    <section id="formulario">
+      <div class="container-fluid" style="background-color: black; overflow-x: hidden">
+        <div class="row justify-content-center">
+            <div class="col-9 col-sm-8 col-md-7 col-lg-6 col-xl-4 mt-5 mb-5">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center mb-5"><h1 id= "forminscrip">&#9313 ¡Inscríbete!</h1></div>
+                    <div class="panel-body">
+                        <form id="forminscrip-fc" role="Form" method="post" action="" accept-charset="UTF-8">
+                                <div class="form-group">
+                                  <label for="fname">Nombre</label>
+                                  <input type="text" id="nombrecliente" class="form-control" name="nombrecliente" placeholder="" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="lname">Apellido</label>
+                                  <input type="text" id="apellidocliente" class="form-control" name="apellidocliente" placeholder="" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="emailaddr">Email</label>
+                                    <input type="email" id="emailcliente" class="form-control" name="emailcliente" placeholder="" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="cryptos">Seleccione la crypto a depositar</label>
+                                    <select id="cryptocliente" class="form-control" name="cryptocliente">
+                                      <option value="Bitcoin">Bitcoin</option>
+                                      <option value="Ethereum">Ethereum</option>
+                                      <option value="Cardano">Cardano</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="cantidad">Cantidad</label>
+                                  <input type="number" step="any" id="cantidadcliente" class="form-control" name="cantidadcliente" placeholder="" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="plazo">Plazo</label>
+                                  <input type="number" id="plazocliente" class="form-control" name="plazocliente" placeholder="(En meses)" required>
+                                </div>
+                                <div class="form-group text-center mt-5">
+                                  <button type="submit" class="btn btn-light btn-md" id="inscripcioncliente" name="submit">Enviar</button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+     </section>  
+<!--Testimonios-->
+      <section id="testimonios">
+          <div class="container mb-5" style="overflow-x: hidden">
+              <h1 class="text-center mt-5">Testimonios</h1>
+              <div class="row mt-5">
+                  <div class="col-md-6 text-center">
+                      <div class="card" data-aos="fade-right" data-aos-duration="2000">
+                          <div class="card-body">
+                            <img src="assets/t1.jpg" class="img-thumbnail" alt="...">
+                              <p class="mt-5">
+                                  <i>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta est laudantium quidem adipisci reiciendis sed minima expedita sunt?"</i>
+                              </p>
+                              <cite><strong>Jane Doe</strong></cite>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                        <div class="card" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="card-body">
+                              <img src="assets/t2.jpg" class="img-thumbnail" alt="...">
+                                <p class="mt-5">
+                                    <i>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta est laudantium quidem adipisci reiciendis sed minima expedita sunt?"</i>
+                                </p>
+                                <cite><strong>John Doe</strong></cite>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+<!--Footer-->
+        <footer>
+          <section id="footer">
+            <div class="container py-2"style="overflow-x: hidden">
+                <div class="row mt-1">
+                      <div class="col-sm-12 col-md-4 text-center text-white">
+                          <h3 class="mt-4">About</h3>
+                          <p class="mt-4">Autor: Lucas Rimondi.<br>Tecnologías utilizadas: HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX.</p>
+                          <p>PlazoCrypto &copy 2021</p>
+                      </div>
+                      <div class="col-sm-12 col-md-4 text-center text-white">
+                            <h3 class="mt-4">Contacto</h3>
+                            <p class="mt-4">
+                              <a class="btn btn-primary" style="background-color: #dd4b39; border: none" href="mailto:lucasrimondi@gmail.com" role="button"><i class="fab fa-google"></i></a>
+                              <a class="btn btn-primary" style="background-color: #0082ca; border: none" href="https://www.linkedin.com/in/lucasrimondi" role="button"><i class="fab fa-linkedin-in"></i></a>
+                              <a class="btn btn-primary" style="background-color: #25d366; border: none" href="https://wa.me/123456789/?text=Hola!%20Me%20interesa%20contactarme%20contigo" role="button"><i class="fab fa-whatsapp"></i></a>
+                              <a class="btn btn-primary" style="background-color: #333333; border: none" href="https://github.com/lucasrimondi" role="button"><i class="fab fa-github"></i></a>
+                            </p>
+                      </div>
+                      <div class="col-sm-12 col-md-4 text-center text-white" id="newsletterdiv">
+                            <h3 class="mt-4">Newsletter</h3>
+                            <form id="newsletter" role="Form" method="post" class="mt-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nombrenewsletter" placeholder="Ingresa tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailnewsletter" placeholder="Ingresa tu email" required>
+                                </div>
+                                <button type="submit" id="btnneesletter" class="btn btn-dark">Suscríbete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+             </section>
+          </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+  </body>
+</html>
