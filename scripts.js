@@ -204,10 +204,6 @@ $('#menu-navegacion a, #conocemas, #botoninscribite').click(function(event){
       });
     }
 });
-//Close toggler after clicking (small size navbar)
-$('.navbar-nav>li>a').on('click', function(){
-  $('.navbar-collapse').collapse('hide');
-});
 ////////////////////////////////////////////////////////////
 //////////////////////AJAX API//////////////////////////////
 /////////////////PRECIO BITCOIN AJAX////////////////////////
