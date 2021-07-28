@@ -5,7 +5,7 @@
 ## About 📝
 PlazoCrypto is the Final Project for the JavaScript Course I completed in July '21 at Coderhouse. It is a fully responsive webapp that offers a simulated cryptocurrency staking service. 
 
-## Technologies used :computer:
+## Technologies and tools used :computer:
 Html / CSS / Bootstrap / JavaScript / jQuery / AJAX / API
 
 ## Some Features 🔧
