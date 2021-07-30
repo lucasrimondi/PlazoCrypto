@@ -32,7 +32,7 @@ HTML5 / CSS3 / Bootstrap / JavaScript / jQuery / AJAX / API
 <img src="https://user-images.githubusercontent.com/87493125/127241191-77e70498-186a-4f33-b76b-cdc786dd8507.gif">
 </div>
 <br>
-📌 Newsletter suscription stored in user's localStorage <br><br>
+📌 Newsletter suscription that is stored in user's localStorage <br><br>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/87493125/127241285-ed11e128-16e2-4bf8-a2a5-a5115b628cc7.gif">
 </div>
