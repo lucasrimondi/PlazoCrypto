@@ -8,7 +8,7 @@ PlazoCrypto is the Final Project for the JavaScript Course I completed in July '
 ## Technologies and tools :computer:
 HTML5 / CSS3 / Bootstrap / JavaScript / jQuery / AJAX / API
 
-## Demo 🖥️ 📲
+## Deployment 🖥️ 📲
 <a href="https://lucasrimondi.github.io/PlazoCrypto/">PlazoCrypto</a> (github page link)
 
 ## Animations libraries ✨
